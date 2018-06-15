@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+button[type=submit] {
+    background-color: #210980;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 43%;
+    font-size: 20px;
+    
+}
+
+button[type=button] {
+    background-color: #FFD54F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 43%;
+    font-size: 20px;
+    
+}    
+    
+table, td, th {
+    border: transparent;
+}
+
+table {
+    table-layout: auto;
+    width: 100%; 
+    margin-left: 150px;
+    margin-top: 200px;
+}
+
+th {
+    text-align: middle;
+    margin-bottom: 30px;
+}
+
+    td {
+        
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body>
+
+ <img src="1.png" style="float: left;" width="600" height="150"/>   
+<form action="page2.html">
+    <input type="image" src="2.png" style="float: right;" width="90" height="70" ></form>
+<table style="float: center;" style="width:100%">
+  <tr>
+    <th></th>
+    <th></th> 
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="Bernard_Tefel.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Vuk_Subotic.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Balaji_Lakshmanan.jpg" style="float: middle;" width="200" height="250"></td>
+  </tr>
+ <tr>
+    <td><button type="submit" id="berni">Bernard Tafel</button>
+     <script type="text/javascript">
+    document.getElementById("berni").onclick = function () {
+        location.href = "berni1.html";
+    };
+</script>
+    </td>
+     <td><button type="button" id="vuk">Vuk Subotic</button>
+     <script type="text/javascript">
+    document.getElementById("vuk").onclick = function () {
+        location.href = "vuk.html";
+    };
+</script>
+     </td>
+     <td><button type="submit" id="bala">Balaji Lakshmanan</button>
+     <script type="text/javascript">
+    document.getElementById("bala").onclick = function () {
+        location.href = "bala.html";
+    };
+</script>
+     </td>
+    
+</tr>
+  <tr>
+    <td><img src="Youssef_Lahlou.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Sinan_Orhon.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Alvaro_Cruz_Chamorro.jpg" style="float: middle;" width="200" height="250"></td>
+  </tr>
+  <tr>
+    <td><button type="button" id="yus">Youssef Lahlou</button>
+        <script type="text/javascript">
+    document.getElementById("yus").onclick = function () {
+        location.href = "yus.html";
+    };
+</script> 
+    </td>
+     <td><button type="submit" id="sinan">Sinan Orhon</button>
+      <script type="text/javascript">
+    document.getElementById("sinan").onclick = function () {
+        location.href = "sinan.html";
+    };
+</script>
+    </td>
+     <td><button type="button" id="alvaro">Alvaro Chamorro</button>
+      <script type="text/javascript">
+    document.getElementById("alvaro").onclick = function () {
+        location.href = "alvaro.html";
+    };
+</script>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<div style="text-align: center;">
+     <button type="submit" id="myButton" >Add Player</button>
+</div>
+  
+</body>
+</html>

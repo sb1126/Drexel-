@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+Input[type=button] {
+    background-color: #210980;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 20px;
+    margin-left: 60px;
+    
+}
+
+    
+Input[type=checkbox] {
+    display: block;
+    position: absolute;
+    padding-left: 105px;
+    margin-bottom: 12px;
+    cursor: pointer; 
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 400px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+button[type=submit] {
+    background-color: #210980;
+    color: white;
+    padding: 20px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    font-size: 10px;
+    
+}    
+
+    .table{
+        
+        margin-left: 100px; 
+    }
+
+</style>
+</head>
+<body>
+
+<form action="page2.html">
+    <input type="image" src="2.png" style="float: right;" width="90" height="70"></form>
+    
+<img src="1.png" style="float: left;" width="600" height="150"/>   
+<button type="submit" id="myButton" style="float: right;" >BACK</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "mens.html";
+    };
+</script>
+    
+<img src="abc.png" style="float: right;" width="700" height="550" />
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<table style="float: center;" style="width:100%">
+    <h4>phone : (603)000-0000</h4>
+    <h3>Bala's Schedule</h3>
+  <tr>
+    <th></th>
+      
+  </tr>
+ <tr>
+</tr>
+<tr>
+  <div class="data">    
+    <span>
+    <input name="player" type="checkbox" value="MONDAY SCHEDULE : 8:30 am - 12:30pm - Classes ; 1 pm to 4pm - free ; 6pm - 7:30pm - Gym "/>
+    <label for="player"><h3><br>Monday</h3></label>
+    </span> 
+<br>
+    <span>
+      
+    <input name="player" type="checkbox" value="TUESDAY SCHEDULE : 8:30 am - 12:30pm - Free ; 1 pm to 3pm - classes ; 6pm - 7:30pm - Gym"/>
+    <label for="player"><h3>Tuesday</h3></label>
+    </span>    
+<br>
+    <span>
+      
+    <input name="player" type="checkbox" value="WEDNESDAY SCHEDULE : No Classes"/>
+    <label for="player"><h3>Wednesday</h3></label>
+    </span>
+  <br>  
+    <span>
+    <input name="player" type="checkbox" value="THURSDAY SCHEDULE : 8:30 am - 12:30pm - Practice ; 1 pm to 3pm - classes ; 6pm - 7:30pm - Gym"/>
+    <label for="player"><h3>Thursday</h3></label>
+    </span>
+  <br>  
+    <span>
+    <input name="player" type="checkbox" value="FRIDAY SCHEDULE : 10am - 12pm - Class"/>
+    <label for="player"><h3>Friday</h3></label>
+    </span>
+    <br>
+    <br>  
+    <br>
+    <br>  
+    <input type="button" onclick="alert(getCheckedCheckboxesFor('player'));" value="Get Schedule" />
+     
+</div>
+<td>  
+<script>
+    function getCheckedCheckboxesFor(checkboxName) {
+    var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked'), values = [];
+    Array.prototype.forEach.call(checkboxes, function(el) {
+        values.push(el.value);
+    });
+    return values;
+}
+
+</script>
+</tr>
+</table>    
+      
+</body>
+</html>

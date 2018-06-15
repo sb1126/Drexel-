@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+    
+button[type=submit] {
+    background-color: #210980;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 43%;
+    font-size: 20px;
+    
+}
+
+button[type=button] {
+    background-color: #FFD54F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 43%;
+    font-size: 20px;
+    
+}    
+    
+table, td, th {
+    border: transparent;
+}
+
+table {
+    table-layout: auto;
+    width: 100%; 
+    margin-left: 150px;
+    margin-top: 200px;
+}
+
+th {
+    text-align: middle;
+    margin-bottom: 30px;
+}
+
+    td {
+        
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body>
+
+ <img src="1.png" style="float: left;" width="600" height="150"/>   
+<form action="page2.html">
+    <input type="image" src="2.png" style="float: right;" width="90" height="70"></form>
+<table style="float: center;" style="width:100%">
+  <tr>
+    <th></th>
+    <th></th> 
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="Clary_Rodriguez_Cruz.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Ghita_Benhadi.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Kendra_Bunch.jpg" style="float: middle;" width="200" height="250"></td>
+  </tr>
+ <tr>
+    <td><button type="submit" id="clary">Clary Rodriguez</button>
+      <script type="text/javascript">
+    document.getElementById("clary").onclick = function () {
+        location.href = "clary.html";
+    };
+</script>
+     </td>
+     <td><button type="button" id="ghita">Ghita Benhadi</button>
+      <script type="text/javascript">
+    document.getElementById("ghita").onclick = function () {
+        location.href = "ghita.html";
+    };
+</script>
+     </td>
+     <td><button type="submit" id="kendra">Kendra Bunch</button>
+      <script type="text/javascript">
+    document.getElementById("kendra").onclick = function () {
+        location.href = "kendra.html";
+    };
+</script>
+     </td>
+    
+</tr>
+  <tr>
+    <td><img src="Marta_Martinez.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Mya_Fuentes.jpg" style="float: middle;" width="200" height="250"></td>
+    <td><img src="Ryshena_Providence.jpg" style="float: middle;" width="200" height="250"></td>
+  </tr>
+  <tr>
+    <td><button type="button" id="marta">Marta Martinez</button>
+     <script type="text/javascript">
+    document.getElementById("marta").onclick = function () {
+        location.href = "martha.html";
+    };
+</script>  
+    </td>
+     <td><button type="submit" id="mya">Mya Fuentes</button>
+      <script type="text/javascript">
+    document.getElementById("mya").onclick = function () {
+        location.href = "mya.html";
+    };
+</script> 
+     </td>
+     <td><button type="button" id="shena">Ryshena Providence</button>
+      <script type="text/javascript">
+    document.getElementById("shena").onclick = function () {
+        location.href = "shena.html";
+    };
+</script> 
+     </td>
+    </tr>
+</table>
+<br>
+<br>
+<div style="text-align: center;">
+     <button type="submit" id="myButton" >Add Player</button>
+</div>
+</body>
+</html>
